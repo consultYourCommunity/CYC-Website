@@ -18,8 +18,8 @@ const OurValues: React.FC = () => {
   return (
     <section className="w-full">
       {/* Title Section */}
-      <div className="w-full bg-white pt-16 pb-12 text-center">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-cyc-blue">
+      <div className="w-full bg-cyc-blue pt-16 pb-12 text-center">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-white">
           Our Values
         </h2>
       </div>
@@ -30,7 +30,7 @@ const OurValues: React.FC = () => {
           {VALUES_DATA.map((value, index) => {
             const Icon = getIcon(value.icon);
             return (
-              <motion.div 
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
