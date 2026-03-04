@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const Hero: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollY } = useScroll();
-  
+
   // Text fade effect: Fades out faster (0 to 200px scroll)
   const textOpacity = useTransform(scrollY, [0, 200], [1, 0]);
   const textY = useTransform(scrollY, [0, 200], [0, 50]);
@@ -14,17 +14,17 @@ const Hero: React.FC = () => {
     <section ref={ref} className="relative w-full h-[700px] bg-gray-900 overflow-hidden">
       {/* Background Image - Static (No Parallax) */}
       <div className="absolute inset-0 w-full h-full">
-        <img 
-          src={ASSETS.HERO_BG} 
-          alt="PSU Students" 
-          className="w-full h-full object-cover object-center"
+        <img
+          src={ASSETS.HERO_BG}
+          alt="PSU Students"
+          className="w-full h-full object-cover object-top"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/10"></div>
       </div>
 
       {/* Content */}
-      <motion.div 
+      <motion.div
         style={{ opacity: textOpacity, y: textY }}
         className="relative z-10 w-full h-full flex flex-col items-center justify-center text-white text-center px-4"
       >
