@@ -19,7 +19,7 @@ const OurValues: React.FC = () => {
     <section className="w-full">
       {/* Title Section */}
       <div className="w-full bg-cyc-blue pt-16 pb-12 text-center">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-white">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-white underline underline-offset-8 decoration-2">
           Our Values
         </h2>
       </div>
@@ -51,6 +51,11 @@ const OurValues: React.FC = () => {
             );
           })}
         </div>
+      </div>
+
+      {/* White separator line */}
+      <div className="w-full bg-cyc-blue">
+        <hr className="border-white mx-auto" style={{ maxWidth: '90%' }} />
       </div>
     </section>
   );
