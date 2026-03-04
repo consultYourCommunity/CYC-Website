@@ -14,7 +14,7 @@ const ApplyPage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         style={{
-                            fontFamily: "'Playfair Display', serif",
+                            fontFamily: "'Montserrat', sans-serif",
                             fontSize: '2.8rem',
                             fontWeight: 400,
                             color: '#062667',
@@ -67,7 +67,7 @@ const ApplyPage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         style={{
-                            fontFamily: "'Playfair Display', serif",
+                            fontFamily: "'Montserrat', sans-serif",
                             fontSize: '3.5rem',
                             fontWeight: 400,
                             color: 'white',
@@ -125,7 +125,7 @@ const ApplyPage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         style={{
-                            fontFamily: "'Playfair Display', serif",
+                            fontFamily: "'Montserrat', sans-serif",
                             fontSize: '3.5rem',
                             fontWeight: 400,
                             color: 'white',

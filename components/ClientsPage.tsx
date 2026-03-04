@@ -74,7 +74,7 @@ const ClientsPage = () => {
                         transition={{ duration: 0.6 }}
                         className="text-center mb-16"
                         style={{
-                            fontFamily: "'Playfair Display', serif",
+                            fontFamily: "'Montserrat', sans-serif",
                             fontSize: '4rem',
                             fontWeight: 400,
                             color: '#062667',
@@ -154,7 +154,7 @@ const ClientsPage = () => {
                             <div
                                 className="mb-6"
                                 style={{
-                                    fontFamily: "'Playfair Display', serif",
+                                    fontFamily: "'Montserrat', sans-serif",
                                     fontSize: '4rem',
                                     color: '#CB725E',
                                     lineHeight: 0.5,
@@ -167,7 +167,7 @@ const ClientsPage = () => {
                             <p
                                 className="mb-10"
                                 style={{
-                                    fontFamily: "'Playfair Display', serif",
+                                    fontFamily: "'Montserrat', sans-serif",
                                     fontSize: '1.3rem',
                                     color: '#062667',
                                     lineHeight: 1.6,
@@ -190,7 +190,7 @@ const ClientsPage = () => {
                             {/* Attribution */}
                             <p
                                 style={{
-                                    fontFamily: "'Playfair Display', serif",
+                                    fontFamily: "'Montserrat', sans-serif",
                                     fontSize: '1.1rem',
                                     color: '#062667',
                                 }}
@@ -245,7 +245,7 @@ const ClientsPage = () => {
                             <h2
                                 className="mb-6"
                                 style={{
-                                    fontFamily: "'Playfair Display', serif",
+                                    fontFamily: "'Montserrat', sans-serif",
                                     fontSize: '2.8rem',
                                     fontWeight: 400,
                                     color: 'white',
