@@ -18,8 +18,8 @@ const OurValues: React.FC = () => {
   return (
     <section className="w-full">
       {/* Title Section */}
-      <div className="w-full bg-cyc-blue pt-16 pb-12 text-center">
-        <h2 className="text-[40px] md:text-[56px] font-bold text-white underline underline-offset-8 decoration-2">
+      <div className="w-full bg-cyc-blue pt-16 pb-4 text-center">
+        <h2 className="text-[40px] md:text-[56px] font-bold text-white">
           Our Values
         </h2>
       </div>
