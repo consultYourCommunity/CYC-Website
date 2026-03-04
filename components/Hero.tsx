@@ -11,13 +11,13 @@ const Hero: React.FC = () => {
   const textY = useTransform(scrollY, [0, 200], [0, 50]);
 
   return (
-    <section ref={ref} className="relative w-full h-[700px] bg-gray-900 overflow-hidden">
+    <section ref={ref} className="relative w-full h-[850px] bg-gray-900 overflow-hidden">
       {/* Background Image - Static (No Parallax) */}
       <div className="absolute inset-0 w-full h-full">
         <img
           src={ASSETS.HERO_BG}
           alt="PSU Students"
-          className="w-full h-full object-cover object-top"
+          className="w-full h-full object-cover object-bottom"
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/10"></div>
