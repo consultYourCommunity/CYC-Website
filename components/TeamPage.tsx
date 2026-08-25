@@ -6,10 +6,12 @@ import { motion } from 'framer-motion';
 const TeamMemberCard: React.FC<{
     name: string;
     title: string;
+    year: string;
+    major: string;
     photo: string;
     email: string;
     linkedin: string;
-}> = ({ name, title, photo, email, linkedin }) => {
+}> = ({ name, title, year, major, photo, email, linkedin }) => {
     return (
         <div className="flex flex-col items-start w-full max-w-[300px]">
             {/* Circular Photo */}
@@ -26,6 +28,7 @@ const TeamMemberCard: React.FC<{
                 <div>
                     <h3 className="text-white text-[22px] font-light italic">{name}</h3>
                     <p className="text-white/80 text-[14px] font-light">{title}</p>
+                    <p className="text-white/60 text-[13px] font-light">{year} &middot; {major}</p>
                 </div>
                 <div className="flex space-x-2 mb-1">
                     <a href={email} target="_blank" rel="noreferrer">
@@ -50,8 +53,7 @@ const TeamMemberCard: React.FC<{
 
 const TeamPage: React.FC = () => {
     const president = TEAM_MEMBERS[0]; // Kalin Chen
-    const middleRow = TEAM_MEMBERS.slice(1, 4); // Faith, Jessie, Krystal
-    const bottomRow = TEAM_MEMBERS.slice(4); // Elena
+    const vps = TEAM_MEMBERS.slice(1); // Julianna, Jessie, Arnav, Nidhi
 
     return (
         <section className="w-full bg-cyc-blue min-h-screen">
@@ -79,26 +81,16 @@ const TeamPage: React.FC = () => {
                     <TeamMemberCard {...president} />
                 </motion.div>
 
-                {/* Middle Row - 3 Members */}
+                {/* Vice Presidents - 2x2 Grid */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16"
+                    className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-[700px] mx-auto justify-items-center"
                 >
-                    {middleRow.map((member) => (
+                    {vps.map((member) => (
                         <TeamMemberCard key={member.name} {...member} />
                     ))}
-                </motion.div>
-
-                {/* Bottom Row - 1 Member (left aligned) */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.6 }}
-                    className="flex justify-start"
-                >
-                    <TeamMemberCard {...bottomRow[0]} />
                 </motion.div>
             </div>
         </section>
