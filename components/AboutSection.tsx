@@ -10,8 +10,8 @@ const AboutSection: React.FC = () => {
       <div className="absolute inset-0 w-full h-full">
         <img 
           src={ASSETS.ABOUT_BG} 
-          alt="Building" 
-          className="w-full h-full object-cover object-center"
+          alt="Consult Your Community at Penn State members on the steps of Old Main" 
+          className="w-full h-full object-cover object-[center_58%]"
         />
         <div className="absolute inset-0 bg-cyc-blue/40"></div>
       </div>
