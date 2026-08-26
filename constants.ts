@@ -18,7 +18,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Kalin Chen",
     title: "President",
-    year: "Junior",
+    year: "Senior",
     major: "Economics",
     photo: ASSETS.TEAM_PHOTO_KALIN,
     email: "mailto:kalin.chen@consultyourcommunity.org",
@@ -27,7 +27,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Julianna Yates",
     title: "VP of Marketing",
-    year: "Sophomore",
+    year: "Junior",
     major: "Undecided",
     photo: ASSETS.TEAM_PHOTO_JULIANNA,
     email: "mailto:julianna.yates@consultyourcommunity.org",
@@ -36,7 +36,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Jessie Chen",
     title: "VP of Finance",
-    year: "Junior",
+    year: "Senior",
     major: "Accounting & Finance",
     photo: ASSETS.TEAM_PHOTO_JESSIE,
     email: "mailto:jessie.chen1@consultyourcommunity.org",
@@ -54,7 +54,7 @@ export const TEAM_MEMBERS = [
   {
     name: "Nidhi Parekh",
     title: "VP of Internal",
-    year: "Sophomore",
+    year: "Junior",
     major: "Finance",
     photo: ASSETS.TEAM_PHOTO_NIDHI,
     email: "mailto:nidhi.parekh@consultyourcommunity.org",
